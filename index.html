@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <title>Questions</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--for cylinder -->
+        <h1 style="margin:8px ;">Question 1</h1>
+        <div class="cylinder">
+            
+            <div id='align_cyl'>
+                <input type="number" id="radius" placeholder="Enter Radius">
+                <input type="number" id="height" placeholder="Enter Height">
+                <input id='volume' placeholder="Your Answer" disabled>
+                <button onclick="volume_cyl();">Calculate volume</button>
+                <button onclick="surface_cyl();">Calculate Surface area</button>
+            </div>
+            
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Cylinder.svg/1200px-Cylinder.svg.png"
+                width="300px" height="100%" />
+        </div>
+        <h1 style="margin:8px ;">Question 2</h1>
+        <!--for power formula -->
+        <div class="power">
+            <div id='a_power'>
+                <input id="current" placeholder="current" type="number">
+                <input id="voltage" placeholder="voltage" type="number">
+                <input id='power' placeholder="power" disabled>
+                <button onclick="power_calc();">Calculate power</button>
+            </div>
+           
+        </div>
+        <h1 style="margin:8px ;">Question 3</h1>
+        <!--for bucket -->
+        <div class="bucket">
+            <div id="bucket_i">
+                <input type="number" id='bucket_area' placeholder="Enter area covered in one bucket">
+                <input type="number" id="wall_width" placeholder="Enter width of wall">
+                <input type="number" id="wall_height" placeholder="Enter height of wall">
+                <input id="answer_bucket" placeholder="Number of bucket required" disabled>
+                <button onclick="wall();">Calculate number of bucket required</button>
+            </div>
+        </div>
+    </div>
+    <script src="maths_questions.js"></script>
+</body>
+
+</html>
